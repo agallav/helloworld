@@ -9,25 +9,26 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'echo "Deoloy"'
+                sh 'echo "Deploy"'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'echo "Deoloy"'
+                sh 'echo "Test"'
             }
         }
 
         stage('Release') {
             steps {
-                sh 'echo "Deoloy"'
+                sh 'echo "Release"'
             }
         }
 
         stage('Deploy to Prod') {
             steps {
-                sh 'echo "Deoloy"'
+                input message: 'Are you sure you want to deploy to Prod? (Click "Proceed" to continue)'
+                sh 'echo "Deploy to Prod"'
             }
         }
     }
