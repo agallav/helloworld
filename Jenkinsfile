@@ -8,20 +8,27 @@ pipeline {
         }
 
         stage('Deploy') {
-            sh 'echo "Deoloy"'
-
+            steps {
+                sh 'echo "Deoloy"'
+            }
         }
 
         stage('Test') {
-
+            steps {
+                sh 'echo "Deoloy"'
+            }
         }
 
         stage('Release') {
-
+            steps {
+                sh 'echo "Deoloy"'
+            }
         }
 
         stage('Deploy to Prod') {
-
+            steps {
+                sh 'echo "Deoloy"'
+            }
         }
     }
 }
