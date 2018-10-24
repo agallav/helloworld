@@ -37,7 +37,9 @@ pipeline {
         failure {
             mail (to:
                   'agalla.biz@gmail.com',
-                  subject: 'The Pipeline failed!')
+                  subject: 'The Pipeline failed!',
+                  body:
+                  "Pipeline error: \nFix me.")
         }
     }
 }
