@@ -26,6 +26,9 @@ pipeline {
         }
 
         stage('Deploy to Prod') {
+            when {
+                branch 'master'
+            }
             steps {
                 input message: 'Are you sure you want to deploy to Prod? (Click "Proceed" to continue)'
                 sh 'echo "Deploy to Prod"'
