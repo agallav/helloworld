@@ -16,7 +16,6 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'invalid.sh'
                 sh 'echo "Test"'
             }
         }
